@@ -10,7 +10,6 @@
 class UInputComponent;
 class USceneComponent;
 class UCameraComponent;
-class UAnimMontage;
 class USoundBase;
 
 UCLASS(config = Game)
@@ -45,8 +44,6 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	
 
 	/** Look Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input, meta = (AllowPrivateAccess = "true"))
